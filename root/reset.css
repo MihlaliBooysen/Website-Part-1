@@ -1,0 +1,10 @@
+*, *::before, *::after {
+  box-sizing: border-box; /* 1. Use a more-intuitive box-sizing model */
+}
+* {
+  margin: 0; /* 2. Remove default margins */
+}
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%; /* 3. Improve media defaults */
+}

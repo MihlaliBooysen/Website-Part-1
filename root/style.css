@@ -1,0 +1,158 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  background-color: #f9f9f9;
+  color: #333;
+}
+h1, h2, h3, h4, h5, h6 {
+  margin-bottom: 0.5em;
+  font-weight: bold;
+  color: #222;
+}
+p {
+  margin-bottom: 1em;
+}
+a {
+  color: #007BFF;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+ul, ol {
+  margin-left: 1.5em;
+  margin-bottom: 1em;
+}
+button {
+  padding: 0.5em 1em;
+  border: none;
+  border-radius: 4px;
+  background-color: #007BFF;
+  color: white;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #0056b3;
+}
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+/* --- Base body text --- */
+body {
+  font-family: "Segoe UI", Arial, Helvetica, sans-serif; /* Clean, modern font */
+  font-size: 16px;  /* Default size */
+  line-height: 1.6; /* Spacing between lines */
+  color: #333;      /* Text color */
+  background-color: #f9f9f9;
+}
+
+/* --- Headings --- */
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Georgia", serif; /* Give headings a different feel */
+  font-weight: bold;
+  color: #222;
+  margin-bottom: 0.5em;
+}
+
+h1 { font-size: 2.5rem; } /* ~40px */
+h2 { font-size: 2rem; }   /* ~32px */
+h3 { font-size: 1.75rem; }/* ~28px */
+h4 { font-size: 1.5rem; } /* ~24px */
+h5 { font-size: 1.25rem; }/* ~20px */
+h6 { font-size: 1rem; }   /* ~16px */
+
+/* --- Paragraphs --- */
+p {
+  margin-bottom: 1em;
+  text-align: justify; /* Makes paragraphs neat */
+}
+
+/* --- Links --- */
+a {
+  color: #007BFF;
+  text-decoration: none;
+  font-weight: 500;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+/* --- Quotes --- */
+blockquote {
+  font-style: italic;
+  color: #555;
+  border-left: 4px solid #007BFF;
+  padding-left: 1em;
+  margin: 1em 0;
+}
+.container {
+  display: flex;              /* Enable flexbox */
+  justify-content: space-between; /* Space between items */
+  align-items: center;        /* Align items vertically */
+  padding: 20px;
+  background-color: #f0f0f0;
+  border: 2px solid #ddd;
+}
+
+/* Flex items */
+.box {
+  flex: 1;                    /* Take equal space */
+  margin: 10px;
+  padding: 20px;
+  background-color: #007BFF;
+  color: white;
+  text-align: center;
+  border-radius: 8px;
+}
+.underline {
+  text-decoration: underline;
+}
+a:hover {
+  color: red;           
+}
+
+a:active {
+  color: green;         
+}
+
+a:visited {
+  color: rgb(225, 7, 249);         
+}
+
+button:focus {
+  outline: 2px solid blue; 
+}
+@media (max-width: 37.5em) {/*600px (mobile)*/
+.containor{
+    grid-template-columns: 1fr;
+}
+body{
+    background-color: lightblue;
+}
+ul.nav{
+    flex-direction: column;
+    align-items: stretch;
+}
+ul.nav li{
+    text-align: center;
+    border-bottom: 0.0625rem solid #e0cfc1;
+}
+.card h2{ 
+    font-size: 1rem;
+}
+.card p{
+    font-size: 0.875rem;
+}
+.card button {
+    padding:0.5rem 0.625rem;
+    font-size: 0.875rem;
+}
+}
