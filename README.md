@@ -1,9 +1,9 @@
-Uploaded read me file 
-added comments on my code 
-added css style sheet 
-added css reset file 
-added css code for styling  wih default styling 
-Linked css file with web page 
+Uploaded read me file,
+added comments on my code, 
+added css style sheet,
+added css reset file,
+added css code for styling  wih default styling,
+Linked css file with web page,
 
 
 <img width="2217" height="1572" alt="image" src="https://github.com/user-attachments/assets/07bbc87e-bd03-45ec-a133-f8ba4621d4a9" />
