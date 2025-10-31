@@ -1,27 +1,152 @@
 <!DOCTYPE html>
 <head>
     <title>SMART HOME SOLUTIONS</title>
-    <link rel="stylesheet" href="reset.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="titletag" content="SMART HOME SOLUTIONS - Home of Smart Living">
+    <meta name="description" content="Welcome to SMART HOME SOLUTIONS - where technology meets your home. Explore our smart home solutions, services, and gallery. Contact us for more information.">
+    <meta name=" Keywords" content="Smart Home, Home Automation, Smart Devices, Home Technology, Smart Home Solutions, Home Security, Energy Efficiency, Smart Lighting, Smart Thermostats, Home Integration">
+    <meta name="author" content="SMART HOME SOLUTIONS">
+    <title>SMART HOME SOLUTIONS</title>
+    <link rel="stylesheet" href="reset.css"> <!-- reset stylesheet link added --><body>
    <link rel="stylesheet" href="root/style.css"> <!--Added main stylesheet for custom styles--> 
 <body>
 <style>
-        body {
-            background-color: lightblue;
-        }
-    </style>
- <br>
-<img src="img/2.png"   alt="Smart Home" width="300" height="200" align="right">
-<h1>SMART HOME SOLUTIONS </h1>
-<nav>
-    <a href="index.html">Home</a> |
-    <a href="about.html">About Us</a>    |   
-    <a href="services.html">Services</a> |        
-    <a href="gallery.html">Gallery</a> |
-    <a href="contact.html">Contact Us</a >  
 
-</nav>
-<P>Products/ Smart home features </P>
-<table border="1">
+        .header {
+            background-color: #03055B;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            display: flex;
+            align-items: center;
+        }
+        
+        .header img {
+            margin-right: 30px;
+        }
+        
+        .header h1, .header h2 {
+            color: white;
+            text-align: center;
+        }
+        
+        nav {
+            background-color: #03055B;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+        
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        nav li {
+            margin-right: 20px;
+        }
+        
+        nav a {
+            color: rgb(255, 255, 255);
+            text-decoration: none;
+        }
+        
+        .image-container {
+            display: flex;
+        }
+        
+        .image-container img {
+            width: 50%;
+            height: 400px;
+            object-fit: cover;
+            margin: 0;
+            padding: 0;
+            border: none;
+        }
+
+table {
+        margin: 0 auto;
+        width: 80%;
+    }
+
+    .header img {
+    margin-right: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+table {
+    margin: 0 auto;
+    width: 80%;
+    border-collapse: collapse;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #03055B;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tr:hover {
+    background-color: #ddd;
+}
+ body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url("img/21267_2_5_front_view-min-min\ \(5\).jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+
+    </style>
+</head>
+<body>
+    <div class="header">
+        <img src="img/2.png" alt="Smart Home" width="100" height="70">
+        <div style="flex-grow: 1;">
+            <h1 style="text-align: center;">SMART HOME SOLUTIONS</h1>
+            <h2 style="text-align: center;">where tech meets your home!</h2>
+        </div>
+    </div>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav> <!-- services table added -->
+<p style="text-align: center;">Products/ Smart home features</p>
+</div>
+    <div class="search-bar" style="text-align: center; margin: 20px 0;">
+        <input type="text" id="search-bar"   placeholder="Search for Services...">
+        <select id="category-select">
+            <option value="all">All Categories</option>
+            <option value="security">Home Security</option>
+            <option value="automation">Home Automation</option>
+            <option value="energy">Energy Management</option>
+        </select>
+    </div>
+<table border="1"> <!-- services table content added -->
 <tr>
     <th>Product</th>
     <th>Service</th>
@@ -78,19 +203,17 @@
     <td>Setup and Integration</td>
     <td>Includes smart TVs, speakers, and streaming devices for enhanced home entertainment.</td>
 </tr>       
-
 </table>
+</body>
 <footer>
-    <p>2024 SMART HOME SOLUTIONS. All rights reserved.
-        Please fill in all the requiered informations and we will be in touch
-    </p>
-
+    <div style="background-color: #03055B; color: white; text-align: center; padding: 10px; position: fixed; bottom: 0; width: 100%;">
+        &copy; 2024 SMART HOME SOLUTIONS. All rights reserved.
+    </div>
 </footer>
 
+<script src="script.js"> </script> <!-- script link added -->
 
-
-
-</body>
+</html>
 
 
 

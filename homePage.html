@@ -1,47 +1,181 @@
 <!DOCTYPE html>
+<html>
 <head>
+     <meta charset="UTF-8">
+     <title>SMART HOME SOLUTIONS</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="titletag" content="SMART HOME SOLUTIONS - Home of Smart Living">
+    <meta name="description" content="Welcome to SMART HOME SOLUTIONS - where technology meets your home. Explore our smart home solutions, services, and gallery. Contact us for more information.">
+    <meta name=" Keywords" content="Smart Home, Home Automation, Smart Devices, Home Technology, Smart Home Solutions, Home Security, Energy Efficiency, Smart Lighting, Smart Thermostats, Home Integration">
+    <meta name="author" content="SMART HOME SOLUTIONS">
     <title>SMART HOME SOLUTIONS</title>
-    <nav>
-    <a href="index.html">Home</a> |
-    <a href="about.html">About Us</a>  |
-    <a href="services.html">Services</a> |        
-    <a href="gallery.html">Gallery</a> |
-    <a href="contact.html">Contact Us</a >  
-
-</nav>
-<link rel="stylesheet" href="reset.css">
-<link rel="stylesheet" href="root/style.css"> <!--Added main stylesheet for custom styles--> 
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="root/style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .header {
+            background-color: #03055B;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            display: flex;
+            align-items: center;
+        }
+        
+        .header img {
+            margin-right: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+        
+        .header h1, .header h2 {
+            color: white;
+            text-align: center;
+        }
+        
+        nav {
+            background-color: #03055B;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+        
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        nav li {
+            margin-right: 20px;
+        }
+        
+        nav a {
+            color: rgb(255, 255, 255);
+            text-decoration: none;
+        }
+        
+        .image-container {
+            display: flex;
+            position: relative;
+            height: 400px;
+            overflow: hidden;
+        }
+        
+        .image-container img {
+            width: 50%;
+            height: 100%;
+            object-fit: cover;
+            margin: 0;
+            padding: 0;
+            border: none;
+        }
+        
+        .image-container .text-overlay {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            font-size: 24px;
+            font-weight: bold;
+            text-align: center;
+            width: 50%;
+            text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            transition: transform 0.5s;
+        }
+        
+        .button-container {
+            text-align: center;
+            margin: 20px 0;
+        }
+         body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('img/Open-concept-space-with-smart-home-interior-design-by-Decorilla-2048x1365.webp');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+        
+        .button {
+            background: linear-gradient(to bottom, #03055B, #0026fd);
+            border: none;
+            border-radius: 10px;
+            padding: 10px 20px;
+            font-size: 16px;
+            color: white;
+            cursor: pointer;
+            text-decoration: none;
+        }
+        
+        .button:hover {
+            background: linear-gradient(to bottom, #03055B, #3498db);
+        }
+        
+        footer {
+            background-color: #03055B;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
 </head>
 <body>
-<br>
-<img src="img/2.png"   alt="Smart Home" width="300" height="200" align="right">
-<br>
-<h1>Welcome to SMART HOME SOLUTIONS where tech meets your home!</h1>
-
-<P>These days, many people are talking about smart homes. But what exactly is a smart home? And how is it different from the regular homes most of us live in? Let’s break it down in simple words.</P>
-<br>
-<img src="img/Smart home pic.webp" alt="Smart Home" width="600" height="400" align="center">
-<img src="img/Picture1.jpg" alt="Home Picture" width="600" height="400" align="left">
-
-
-
-
+    <div class="header">
+        <img src="img/2.png" alt="Smart Home" width="100" height="70">
+        <div style="flex-grow: 1;">
+            <h1 style="text-align: center;">Welcome to SMART HOME SOLUTIONS</h1>
+            <h2 style="text-align: center;">where tech meets your home!</h2>
+        </div>
+    </div>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+    <div class="search-bar"> <!--   search bar added -->
+        <input type="text" id="searchInput" placeholder="Search Services...">
+        <select id="categorySelect">
+            <option value="all">All Categories</option>
+            <option value="security">Security</option>
+            <option value="automation">Automation</option>
+            <option value="energy">Energy Management</option>
+        
+    </div> <!-- image and text overlay added -->
+    <div class="image-container">
+        <img src="img/Smart home pic.webp" alt="Smart Home">
+        <img src="img/Picture1.jpg" alt="Home Picture">
+        <h3 class="text-overlay" id="text-overlay">These days, many people are talking about smart homes. But what exactly is a smart home? And how is it different from the regular homes most of us live in? Let’s break it down in simple words.</h3>
+    </div>
+    <div class="button-container">
+        <a href="about.html" class="button">Break Down</a>
+    </div>
+<!-- footer added -->
+    <footer>
+        &copy; 2024 SMART HOME SOLUTIONS. All rights reserved.
+    </footer>
+    <script>
+        window.addEventListener('scroll', function() {
+            var textOverlay = document.getElementById('text-overlay');
+            var scrollPosition = window.scrollY;
+            textOverlay.style.transform = 'translate(-50%, ' + (scrollPosition / 10) + 'px)';
+        });
+    </script>
 </body>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 </html>
