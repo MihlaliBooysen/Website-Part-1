@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-     <meta charset="UTF-8">
-     <title>SMART HOME SOLUTIONS</title>
+    <title>SMART HOME SOLUTIONS</title>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="titletag" content="SMART HOME SOLUTIONS - Home of Smart Living">
     <meta name="description" content="Welcome to SMART HOME SOLUTIONS - where technology meets your home. Explore our smart home solutions, services, and gallery. Contact us for more information.">
@@ -12,11 +12,15 @@
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="root/style.css">
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-        }
+       body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('img/Open-concept-space-with-smart-home-interior-design-by-Decorilla-2048x1365.webp');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
         
         .header {
             background-color: #03055B;
@@ -62,49 +66,60 @@
             text-decoration: none;
         }
         
-        .image-container {
-            display: flex;
-            position: relative;
-            height: 400px;
-            overflow: hidden;
-        }
+
+        .property-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.property {
+    margin: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    width: 300px;
+    position: relative;
+}
+
+.sold-stamp {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 0, 0, 0.7);
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
         
-        .image-container img {
-            width: 50%;
-            height: 100%;
+        .property img {
+            width: 100%;
+            height: 200px;
             object-fit: cover;
-            margin: 0;
-            padding: 0;
-            border: none;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+       
+        .property-details {
+            padding: 20px;
         }
         
-        .image-container .text-overlay {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            color: white;
-            font-size: 24px;
-            font-weight: bold;
-            text-align: center;
-            width: 50%;
-            text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-            transition: transform 0.5s;
+        .property-details h3 {
+            margin-top: 0;
+        }
+        
+        .property-details p {
+            margin-bottom: 20px;
         }
         
         .button-container {
             text-align: center;
             margin: 20px 0;
         }
-         body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-image: url('img/Open-concept-space-with-smart-home-interior-design-by-Decorilla-2048x1365.webp');
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-}
         
         .button {
             background: linear-gradient(to bottom, #03055B, #0026fd);
@@ -130,12 +145,25 @@
             bottom: 0;
             width: 100%;
         }
+        .text-overlay {
+    color: #fff;
+}
+.text-overlay {
+    color: #fff;
+    text-align: center;
+     text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;
+}
+.header-title {
+    font-family: Arial, sans-serif;
+}
+
     </style>
 </head>
 <body>
+
     <div class="header">
         <img src="img/2.png" alt="Smart Home" width="100" height="70">
-        <div style="flex-grow: 1;">
+        <div style="flex-grow: 1;"> <!-- header titles added -->
             <h1 style="text-align: center;">Welcome to SMART HOME SOLUTIONS</h1>
             <h2 style="text-align: center;">where tech meets your home!</h2>
         </div>
@@ -148,34 +176,37 @@
             <li><a href="gallery.html">Gallery</a></li>
             <li><a href="contact.html">Contact Us</a></li>
         </ul>
-    </nav>
-    <div class="search-bar"> <!--   search bar added -->
-        <input type="text" id="searchInput" placeholder="Search Services...">
-        <select id="categorySelect">
-            <option value="all">All Categories</option>
-            <option value="security">Security</option>
-            <option value="automation">Automation</option>
-            <option value="energy">Energy Management</option>
-        
-    </div> <!-- image and text overlay added -->
-    <div class="image-container">
-        <img src="img/Smart home pic.webp" alt="Smart Home">
-        <img src="img/Picture1.jpg" alt="Home Picture">
-        <h3 class="text-overlay" id="text-overlay">These days, many people are talking about smart homes. But what exactly is a smart home? And how is it different from the regular homes most of us live in? Let’s break it down in simple words.</h3>
+    </nav> <!-- image and text overlay added -->
+<h3 class="text-overlay">These days, many people are talking about smart homes. </h3>
+<h4 class="text-overlay"> But what exactly is a smart home? </h4>
+<h5 class="text-overlay"> And how is it different from the regular homes most of us live in? </h5>
+<h6 class="text-overlay"> Let’s break it down in simple words.</h6>
+  
+<div class="property-container">
+    <div class="property"><!-- first property added -->
+        <img src="img/What-is-a-smart-home.png" alt="Smart Home Image">
+        <div class="property-details">
+            <h3>Smart Home</h3>
+            <p><strong>Address:</strong> 123 Main St, Anytown, USA</p>
+            <p><strong>Price:</strong> R1,500,000</p>
+        </div>
+        <div class="sold-stamp">SOLD</div>
     </div>
+    <div class="property"> <!-- second property added --> 
+        <img src="img/smart-home.webp" alt="Smart Home Image">
+        <div class="property-details">
+            <h3>Smart Home</h3>
+            <p><strong>Address:</strong> 456 Elm St, Othertown, USA</p>
+            <p><strong>Price:</strong> R1,200,000</p>
+        </div>
+    </div>
+</div>
+
     <div class="button-container">
-        <a href="about.html" class="button">Break Down</a>
+        <a href="about.html" class="button">Learn More</a>
     </div>
-<!-- footer added -->
     <footer>
         &copy; 2024 SMART HOME SOLUTIONS. All rights reserved.
     </footer>
-    <script>
-        window.addEventListener('scroll', function() {
-            var textOverlay = document.getElementById('text-overlay');
-            var scrollPosition = window.scrollY;
-            textOverlay.style.transform = 'translate(-50%, ' + (scrollPosition / 10) + 'px)';
-        });
-    </script>
 </body>
 </html>
